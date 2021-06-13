@@ -1,0 +1,49 @@
+[{
+        "name": "Donut A",
+        "category": "classic",
+        "price": "80.00",
+        "imgSrc": "images/donut1.png"
+    },
+    {
+        "name": "Donut B",
+        "category": "classic",
+        "price": "70.00",
+        "imgSrc": "images/donut2.png"
+    },
+    {
+        "name": "Donut C",
+        "category": "classic",
+        "price": "40.50",
+        "imgSrc": "images/donut3.png"
+    },
+    {
+        "name": "Donut D",
+        "category": "classic",
+        "price": "60.00",
+        "imgSrc": "images/donut4.png"
+    },
+    {
+        "name": "Donut E",
+        "category": "spring",
+        "price": "60.50",
+        "imgSrc": "images/donut5.png"
+    },
+    {
+        "name": "Donut F",
+        "category": "spring",
+        "price": "60.80",
+        "imgSrc": "images/donut6.png"
+    },
+    {
+        "name": "Donut G",
+        "category": "classic",
+        "price": "60.50",
+        "imgSrc": "images/donut7.png"
+    },
+    {
+        "name": "Donut H",
+        "category": "spring",
+        "price": "60.80",
+        "imgSrc": "images/donut8.png"
+    }
+]
