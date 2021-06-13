@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Add To Cart - Donut</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+    .mySlides {
+        display: none;
+    }
+</style>
+
+<body>
+
+
+
+
+
+    <!-- header  -->
+    <header>
+        <div class="container">
+            <!-- navbar -->
+            <nav class="navbar">
+                <a href="index.html" class="navbar-brand">J.CO fullhouse</a>
+                <button type="button" class="navbar-toggler">
+            <i class = "fas fa-bars"></i>
+          </button>
+                <div class="navbar-collapse">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <!-- <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Contact</a></li> -->
+
+                    </ul>
+                </div>
+
+                <div class="cart">
+                    <button type="button" id="cart-btn">
+              <i class = "fas fa-shopping-cart"></i>
+              <span id = "cart-count-info"></span>
+            </button>
+
+                    <div class="cart-container">
+                        <div class="cart-list">
+
+
+
+
+
+
+
+                            <!-- single item -->
+                            <!-- <div class = "cart-item">
+                  <img src = "images/armchair.png" alt = "product image">
+                  <div class = "cart-item-info">
+                    <h3 class = "cart-item-name">Arm Chair</h3>
+                    <span class = "cart-item-category">Chair</span>
+                    <span class = "cart-item-price">$120.00</span>
+                  </div>
+
+                  <button type = "button" class = "cart-item-del-btn">
+                    <i class = "fas fa-times"></i>
+                  </button>
+                </div> -->
+                            <!-- end of single item  -->
+                        </div>
+
+                        <div class="cart-total">
+                            <h3>Total: P</h3>
+                            <span id="cart-total-value"></span>
+                            <!-- <button id="checkout" type="button">Checkout</button> -->
+
+                            <!-- <a href="https://www.w3schools.com" class="w3-button w3-black">Checkout</a> -->
+
+                        </div>
+                        <!-- <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button> -->
+
+
+                        <button class="btn btn-primary btn-purchase" onclick="myFunction()">Purchase</button>
+
+                        <p id="demo"></p>
+
+
+                    </div>
+                </div>
+            </nav>
+            <!-- end of navbar -->
+
+            <!-- banner -->
+            <div class="banner">
+                <div class="banner-content">
+                    <h1>Spring Donuts Collection </h1>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eveniet, quis nisi recusandae assumenda ea sequi obcaecati accusantium in provident dolore debitis autem neque vel commodi atque voluptates incidunt aliquam delectus veritatis?
+                        Exercitationem, fugit sed!</p>
+                    <div class="btns">
+                        <button type="button" class="btn">know more</button>
+                        <button type="button" class="btn">more info</button>
+                    </div>
+                </div>
+
+                <div class="banner-img">
+                    <img src="images/banner-img.png" alt="furniture banner image">
+                </div>
+            </div>
+            <!-- end of banner  -->
+        </div>
+    </header>
+    <!-- end of header -->
+
+
+
+    <h2 class="w3-center">Our Donuts</h2>
+
+    <div class="w3-content w3-display-container">
+        <img class="mySlides" src="images/capture1.PNG" style="width:100%">
+        <img class="mySlides" src="images/capture2.PNG" style="width:100%">
+        <img class="mySlides" src="images/capture3.PNG" style="width:100%">
+        <img class="mySlides" src="images/capture4.PNG" style="width:100%">
+        <img class="mySlides" src="images/capture5.PNG" style="width:100%">
+
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+
+
+
+    <!-- products section  -->
+    <section class="products">
+        <div class="container">
+            <h2>Menu</h2>
+            <div class="product-list">
+
+
+
+                <div class="product-item">
+                    <div class="product-img">
+                        <img src="images/donut1.png" alt="product image">
+                        <button type="button" class="add-to-cart-btn">
+                <i class = "fas fa-shopping-cart"></i>Add To Cart
+              </button>
+                    </div>
+
+                    <div class="product-content">
+                        <h3 class="product-name">Donut A</h3>
+                        <span class="product-category">classic</span>
+                        <p class="product-price">P80.00</p>
+                    </div>
+                </div>
+
+
+
+                <div class="product-item">
+                    <div class="product-img">
+                        <img src="images/donut2.png" alt="product image">
+                        <button type="button" class="add-to-cart-btn">
+              <i class = "fas fa-shopping-cart"></i>Add To Cart
+            </button>
+                    </div>
+
+                    <div class="product-content">
+                        <h3 class="product-name">Donut B</h3>
+                        <span class="product-category">classic</span>
+                        <p class="product-price">P70.00</p>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <div class="product-img">
+                        <img src="images/donut3.png" alt="product image">
+                        <button type="button" class="add-to-cart-btn">
+            <i class = "fas fa-shopping-cart"></i>Add To Cart
+          </button>
+                    </div>
+
+                    <div class="product-content">
+                        <h3 class="product-name">Donut C</h3>
+                        <span class="product-category">classic</span>
+                        <p class="product-price">P40.50</p>
+                    </div>
+                </div>
+
+
+                <div class="product-item">
+                    <div class="product-img">
+                        <img src="images/donut4.png" alt="product image">
+                        <button type="button" class="add-to-cart-btn">
+          <i class = "fas fa-shopping-cart"></i>Add To Cart
+        </button>
+                    </div>
+
+                    <div class="product-content">
+                        <h3 class="product-name">Donut D</h3>
+                        <span class="product-category">classic</span>
+                        <p class="product-price">P60.00</p>
+                    </div>
+                </div>
+
+
+                <div class="product-item">
+                    <div class="product-img">
+                        <img src="images/donut5.png" alt="product image">
+                        <button type="button" class="add-to-cart-btn">
+        <i class = "fas fa-shopping-cart"></i>Add To Cart
+      </button>
+                    </div>
+
+                    <div class="product-content">
+                        <h3 class="product-name">Donut E</h3>
+                        <span class="product-category">spring</span>
+                        <p class="product-price">P60.50</p>
+                    </div>
+                </div>
+
+
+                <div class="product-item">
+                    <div class="product-img">
+                        <img src="images/donut6.png" alt="product image">
+                        <button type="button" class="add-to-cart-btn">
+      <i class = "fas fa-shopping-cart"></i>Add To Cart
+    </button>
+                    </div>
+
+                    <div class="product-content">
+                        <h3 class="product-name">Donut F</h3>
+                        <span class="product-category">spring</span>
+                        <p class="product-price">P60.80</p>
+                    </div>
+                </div>
+
+
+                <div class="product-item">
+                    <div class="product-img">
+                        <img src="images/donut7.png" alt="product image">
+                        <button type="button" class="add-to-cart-btn">
+    <i class = "fas fa-shopping-cart"></i>Add To Cart
+  </button>
+                    </div>
+
+                    <div class="product-content">
+                        <h3 class="product-name">Donut G</h3>
+                        <span class="product-category">classic</span>
+                        <p class="product-price">P60.80</p>
+                    </div>
+                </div>
+
+
+                <div class="product-item">
+                    <div class="product-img">
+                        <img src="images/donut8.png" alt="product image">
+                        <button type="button" class="add-to-cart-btn">
+  <i class = "fas fa-shopping-cart"></i>Add To Cart
+</button>
+                    </div>
+
+                    <div class="product-content">
+                        <h3 class="product-name">Donut H</h3>
+                        <span class="product-category">spring</span>
+                        <p class="product-price">P60.80</p>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+    <!-- end of products section -->
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-banner">
+            <div class="container">
+                <h2>About</h2>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores est quod maxime nisi possimus corporis qui aliquid molestias sit iusto itaque, cum delectus tempore, distinctio velit. Repellat reiciendis suscipit quidem aliquid ipsam,
+                    nemo minus repudiandae quas eligendi natus voluptate nostrum?</p>
+                <button type="button" class="btn">View More</button>
+            </div>
+        </div>
+
+
+
+
+        </div>
+        <!-- control arrows -->
+        <div class="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        </div>
+        <div class="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        </div>
+
+        </div>
+        </div>
+        </div>
+
+
+
+
+
+        <div class="container">
+            <div class="social-icons">
+                <a href="https://www.facebook.com/J.COPhils/">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com/jcodonutsph?lang=en">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/jcodonutsandcoffee/?hl=en">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.pinterest.ph/frappeh/bringin-on-jco-donuts-coffee-yum/">
+                    <i class="fab fa-pinterest"></i>
+                </a>
+
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer -->
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
